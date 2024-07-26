@@ -1,5 +1,5 @@
 import React from "react";
-import { BsInstagram,BsEnvelope } from "react-icons/bs";
+import { BsEnvelope } from "react-icons/bs";
 import { GrLinkedinOption } from "react-icons/gr";
 
 import { motion } from "framer-motion";
