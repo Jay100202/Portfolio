@@ -1,6 +1,17 @@
 import React from "react";
 
 const NavigationDots = ({ active }) => {
+  const srOnlyStyle = {
+    position: 'absolute',
+    width: '1px',
+    height: '1px',
+    padding: 0,
+    margin: '-1px',
+    overflow: 'hidden',
+    clip: 'rect(0, 0, 0, 0)',
+    border: 0
+  };
+
   return (
     <div className="app__navigation">
       {["home", "about", "work", "skills", "testimonials", "contact"].map(
@@ -12,7 +23,7 @@ const NavigationDots = ({ active }) => {
             style={active === item ? { backgroundColor: "#313BAC" } : {}}
             aria-label={`Navigate to ${item}`}
           >
-            <span className="sr-only">{`Navigate to ${item}`}</span>
+            <span style={srOnlyStyle}>{`Navigate to ${item}`}</span>
           </a>
         )
       )}
