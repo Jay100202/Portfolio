@@ -1,0 +1,4 @@
+[build]
+  base = "frontend_react"
+  command = "CI= npm run build"
+  publish = "frontend_react/build"
